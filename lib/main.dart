@@ -2,25 +2,41 @@ import 'package:flutter/material.dart';
 
 
 void main() => runApp(MaterialApp(
-  home: Scaffold(
+  home: Home()
+));
+void onButtonPressed() {
+  print('Its dipankar');
+}
+
+class Home extends StatelessWidget{
+@override
+  Widget build(BuildContext context){
+  return Scaffold(
     appBar: AppBar(
       title: const Text('First Flutter'),
       centerTitle: true,
+      backgroundColor: Colors.lightBlueAccent,
     ),
     body: const Center(
-      child: Text('Hello World!'),
+      child: Text(
+        'Hello World!',
+        style: TextStyle(
+          fontSize: 20.0,
+          fontWeight: FontWeight.bold,
+          letterSpacing: 2.0,
+          color: Colors.cyan,
+          fontFamily: 'Handia',
+        ),
+      ),
     ),
     floatingActionButton: const FloatingActionButton(
       onPressed: onButtonPressed,
+      backgroundColor: Colors.deepOrange,
       child: Text('Click'),
     ),
-  ),
-));
-void onButtonPressed() {
-  print(const Text('Its dipankar'));
+  );
 }
-
-
+}
 
 /*
 void main() {
