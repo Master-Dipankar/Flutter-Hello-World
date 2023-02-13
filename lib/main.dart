@@ -1,14 +1,23 @@
 import 'package:flutter/material.dart';
 
 
+
 void main() => runApp(MaterialApp(
-  home: Home()
+/*    theme: ThemeData(
+      buttonTheme: ButtonThemeData(
+        buttonColor: Colors.black,
+        textTheme: ButtonTextTheme.primary,
+      ),
+    ),*/
+  home: Home(),
 ));
 void onButtonPressed() {
   print('Its dipankar');
 }
 
 class Home extends StatelessWidget{
+  Home({super.key});
+
 @override
   Widget build(BuildContext context){
   return Scaffold(
@@ -17,17 +26,78 @@ class Home extends StatelessWidget{
       centerTitle: true,
       backgroundColor: Colors.lightBlueAccent,
     ),
-    body: const Center(
-      child: Text(
+    body: Center(
+      child: IconButton(
+        onPressed: (){
+          print('Mailed');
+        },
+        icon: const Icon(Icons.alternate_email),
+        color: Colors.deepOrange
+      )
+      /*child: ElevatedButton(
+        onPressed: () {
+          print('mailed');
+        },
+        child: Row(
+          mainAxisSize: MainAxisSize.min,
+          children: const [
+            Icon(Icons.mail),
+            SizedBox(width: 8),
+            Text(
+              'Mail Me',
+              style: TextStyle(
+                fontSize: 18,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ],
+        ),
+      ),*/
+      /*child: MaterialButton(
+        onPressed:(){ print('click me');},
+        height: 20,
+        minWidth: 80,
+        color: Colors.grey,
+        padding: const EdgeInsets.all(0),
+        child: const Text(
+          "some text",
+          style: TextStyle(color: Colors.white),
+        ),
+      ),*/
+    /* child: Container(
+          color: Colors.white10,
+          child: ElevatedButton(
+            onPressed: () {
+              print('Button Pressed');
+            },
+            child: const Text(
+              'Button Text',
+              style: TextStyle(color: Colors.white),
+            ),
+          ),
+        )*/
+
+
+     /* child: Icon(
+       Icons.book_online,
+        color: Colors.deepOrange,
+        size: 100.0,
+      ),*/
+      /*child: Image.asset('assets/flutter-logo.jpg'),*/
+      /*child: Image(
+        //image: NetworkImage('https://plus.unsplash.com/premium_photo-1674940863690-4b4577686c3e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=414&q=80'),
+        // image: AssetImage('assets/flutter-logo.jpg'),
+      ),*/
+      /*child: Text(
         'Hello World!',
         style: TextStyle(
-          fontSize: 20.0,
+          fontSize: 50.0,
           fontWeight: FontWeight.bold,
           letterSpacing: 2.0,
           color: Colors.cyan,
           fontFamily: 'Handia',
         ),
-      ),
+      ),*/
     ),
     floatingActionButton: const FloatingActionButton(
       onPressed: onButtonPressed,
@@ -37,6 +107,7 @@ class Home extends StatelessWidget{
   );
 }
 }
+
 
 /*
 void main() {
