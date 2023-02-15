@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 
 
-void main() => runApp(MaterialApp(
+void main() => runApp(const MaterialApp(
 /*    theme: ThemeData(
       buttonTheme: ButtonThemeData(
         buttonColor: Colors.black,
@@ -16,7 +16,7 @@ void onButtonPressed() {
 }
 
 class Home extends StatelessWidget{
-  Home({super.key});
+  const Home({super.key});
 
 @override
   Widget build(BuildContext context){
@@ -26,18 +26,155 @@ class Home extends StatelessWidget{
       centerTitle: true,
       backgroundColor: Colors.lightBlueAccent,
     ),
-    body: Center(
-      child: IconButton(
+    body:Column(
+      mainAxisAlignment: MainAxisAlignment.end,
+      crossAxisAlignment: CrossAxisAlignment.end,
+      children: <Widget>[
+    Padding(
+      padding: const EdgeInsets.all(8.0),
+      child: Row(
+      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: <Widget>[
+      const Text('Hello'),
+
+        ElevatedButton(
+          onPressed: () {},
+          style: ElevatedButton.styleFrom(
+            foregroundColor: Colors.white, backgroundColor: Colors.orangeAccent, // Text Color (Foreground color)
+          ),
+          child: const Text(
+            'Elevated Button',
+            style: TextStyle(fontSize:20),
+          ),
+        ),
+
+      Container(
+        color: Colors.tealAccent,
+        padding: const EdgeInsets.all(30.0),
+        child: const Text('Container'),
+          )
+        ],
+       ),
+    ),
+        Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: <Widget>[
+              const Text('Hello'),
+
+              ElevatedButton(
+                onPressed: () {},
+                style: ElevatedButton.styleFrom(
+                  foregroundColor: Colors.white, backgroundColor: Colors.orangeAccent, // Text Color (Foreground color)
+                ),
+                child: const Text(
+                  'Elevated Button',
+                  style: TextStyle(fontSize:20),
+                ),
+              ),
+
+              Container(
+                color: Colors.blue[300],
+                padding: const EdgeInsets.all(30.0),
+                child: const Text('Container'),
+              )
+            ],
+          ),
+        ),
+        Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: <Widget>[
+              const Text('Hello'),
+
+              ElevatedButton(
+                onPressed: () {},
+                style: ElevatedButton.styleFrom(
+                  foregroundColor: Colors.white, backgroundColor: Colors.orangeAccent, // Text Color (Foreground color)
+                ),
+                child: const Text(
+                  'Elevated Button',
+                  style: TextStyle(fontSize:20),
+                ),
+              ),
+              Container(
+                color: Colors.red[200],
+                padding: const EdgeInsets.all(30.0),
+                child: const Text('Container'),
+              )
+            ],
+          ),
+        ),
+      ],
+    ),
+    /*Row(
+      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: <Widget>[
+        const Text('Hello'),
+
+        ElevatedButton(
+          onPressed: () {},
+          style: ElevatedButton.styleFrom(
+            foregroundColor: Colors.white, backgroundColor: Colors.orangeAccent, // Text Color (Foreground color)
+          ),
+          child: const Text(
+              'Elevated Button',
+              style: TextStyle(fontSize:20),
+              ),
+        ),
+        *//*TextButton(
+            onPressed:(){},
+            //color: Colors.red,
+            child: Text('Add Me')
+        ),*//*
+        Container(
+          color: Colors.red,
+          padding: const EdgeInsets.all(30.0),
+          child: const Text('Container'),
+        )
+      ],
+    ),*/
+
+    /*Padding(
+      padding: EdgeInsets.all(30.0),
+      child: Text('Hello'),
+    ),*/
+
+    /*Container(
+      //padding: EdgeInsets.all(30.0),
+      //padding: EdgeInsets.symmetric(horizontal: 30.0, vertical: 20.0),
+      padding: EdgeInsets.fromLTRB(10.0, 20.0, 30.0, 40.0),
+      margin: EdgeInsets.all(20.0),
+      color: Colors.green,
+      child: Text('Hello'),
+    ),*/
+
+
+    /*Center(
+      *//*child: IconButton(
         onPressed: (){
           print('Mailed');
         },
         icon: const Icon(Icons.alternate_email),
         color: Colors.deepOrange
-      )
-      /*child: ElevatedButton(
+      )*//*
+      */
+    /*child: ElevatedButton(
+
         onPressed: () {
           print('mailed');
         },
+        style: ButtonStyle(
+              backgroundColor: MaterialStateProperty.all(Colors.red),
+              *//**//*padding: MaterialStateProperty.all(const EdgeInsets.all(50)),
+              textStyle: MaterialStateProperty.all(const TextStyle(fontSize: 30))*//**//*
+        ),
         child: Row(
           mainAxisSize: MainAxisSize.min,
           children: const [
@@ -52,8 +189,8 @@ class Home extends StatelessWidget{
             ),
           ],
         ),
-      ),*/
-      /*child: MaterialButton(
+      ),*//*
+      *//*child: MaterialButton(
         onPressed:(){ print('click me');},
         height: 20,
         minWidth: 80,
@@ -63,8 +200,8 @@ class Home extends StatelessWidget{
           "some text",
           style: TextStyle(color: Colors.white),
         ),
-      ),*/
-    /* child: Container(
+      ),*//*
+    *//* child: Container(
           color: Colors.white10,
           child: ElevatedButton(
             onPressed: () {
@@ -75,20 +212,21 @@ class Home extends StatelessWidget{
               style: TextStyle(color: Colors.white),
             ),
           ),
-        )*/
+        )*//*
 
 
-     /* child: Icon(
+      *//*child: Icon(
        Icons.book_online,
         color: Colors.deepOrange,
         size: 100.0,
-      ),*/
-      /*child: Image.asset('assets/flutter-logo.jpg'),*/
-      /*child: Image(
+      ),*//*
+      // child: Image.asset('assets/flutter-logo.jpg'),
+      child: Image.network('https://plus.unsplash.com/premium_photo-1674940863690-4b4577686c3e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=414&q=80'),
+      *//*child: Image(
         //image: NetworkImage('https://plus.unsplash.com/premium_photo-1674940863690-4b4577686c3e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=414&q=80'),
         // image: AssetImage('assets/flutter-logo.jpg'),
-      ),*/
-      /*child: Text(
+      ),*//*
+      *//*child: Text(
         'Hello World!',
         style: TextStyle(
           fontSize: 50.0,
@@ -97,8 +235,8 @@ class Home extends StatelessWidget{
           color: Colors.cyan,
           fontFamily: 'Handia',
         ),
-      ),*/
-    ),
+      ),*//*
+    ),*/
     floatingActionButton: const FloatingActionButton(
       onPressed: onButtonPressed,
       backgroundColor: Colors.deepOrange,
