@@ -30,40 +30,40 @@ class Home extends StatelessWidget{
       mainAxisAlignment: MainAxisAlignment.end,
       crossAxisAlignment: CrossAxisAlignment.end,
       children: <Widget>[
-    Padding(
-      padding: const EdgeInsets.all(8.0),
-      child: Row(
-      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: <Widget>[
-      const Text('Hello'),
+        Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: <Widget>[
+          const Text('Text One'),
 
-        ElevatedButton(
-          onPressed: () {},
-          style: ElevatedButton.styleFrom(
-            foregroundColor: Colors.white, backgroundColor: Colors.orangeAccent, // Text Color (Foreground color)
-          ),
-          child: const Text(
-            'Elevated Button',
-            style: TextStyle(fontSize:20),
-          ),
+            ElevatedButton(
+              onPressed: () {},
+              style: ElevatedButton.styleFrom(
+                foregroundColor: Colors.white, backgroundColor: Colors.orangeAccent, // Text Color (Foreground color)
+              ),
+              child: const Text(
+                'Elevated One',
+                style: TextStyle(fontSize:16),
+              ),
+            ),
+
+          Container(
+            color: Colors.tealAccent,
+            padding: const EdgeInsets.all(18.0),
+            child: const Text('Container One'),
+              )
+            ],
+           ),
         ),
-
-      Container(
-        color: Colors.tealAccent,
-        padding: const EdgeInsets.all(30.0),
-        child: const Text('Container'),
-          )
-        ],
-       ),
-    ),
         Padding(
           padding: const EdgeInsets.all(8.0),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
-              const Text('Hello'),
+              const Text('Text Two'),
 
               ElevatedButton(
                 onPressed: () {},
@@ -71,15 +71,15 @@ class Home extends StatelessWidget{
                   foregroundColor: Colors.white, backgroundColor: Colors.orangeAccent, // Text Color (Foreground color)
                 ),
                 child: const Text(
-                  'Elevated Button',
-                  style: TextStyle(fontSize:20),
+                  'Elevated Two',
+                  style: TextStyle(fontSize:18),
                 ),
               ),
 
               Container(
                 color: Colors.blue[300],
-                padding: const EdgeInsets.all(30.0),
-                child: const Text('Container'),
+                padding: const EdgeInsets.all(25.0),
+                child: const Text('Container Two'),
               )
             ],
           ),
@@ -90,7 +90,7 @@ class Home extends StatelessWidget{
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
-              const Text('Hello'),
+              const Text('Text Three'),
 
               ElevatedButton(
                 onPressed: () {},
@@ -98,14 +98,14 @@ class Home extends StatelessWidget{
                   foregroundColor: Colors.white, backgroundColor: Colors.orangeAccent, // Text Color (Foreground color)
                 ),
                 child: const Text(
-                  'Elevated Button',
+                  'Elevated Three',
                   style: TextStyle(fontSize:20),
                 ),
               ),
               Container(
                 color: Colors.red[200],
                 padding: const EdgeInsets.all(30.0),
-                child: const Text('Container'),
+                child: const Text('Container Three'),
               )
             ],
           ),
