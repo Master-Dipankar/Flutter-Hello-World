@@ -40,21 +40,21 @@ class Home extends StatelessWidget{
                   child: Container(
                     padding: const EdgeInsets.all(30.0),
                     color: Colors.indigoAccent,
-                    child: Text('1'),
+                    child: const Text('1'),
                   )),
               Expanded(
                   flex: 2,
                   child: Container(
                     padding: const EdgeInsets.all(30.0),
                     color: Colors.green,
-                    child: Text('2'),
+                    child: const Text('2'),
                   )),
               Expanded(
                   flex: 3,
                   child: Container(
                     padding: const EdgeInsets.all(30.0),
                     color: Colors.black,
-                    child: const Text('3',
+                    child: const Text('4',
                       style: TextStyle(
                         color: Colors.white,
                       ),),
@@ -74,14 +74,14 @@ class Home extends StatelessWidget{
                   child: Container(
                     padding: const EdgeInsets.all(30.0),
                     color: Colors.indigoAccent,
-                    child: Text('1'),
+                    child: const Text('1'),
                   )),
               Expanded(
                   flex: 2,
                   child: Container(
                     padding: const EdgeInsets.all(30.0),
                     color: Colors.green,
-                    child: Text('2'),
+                    child: const Text('2'),
                   )),
               Expanded(
                   flex: 3,
@@ -108,14 +108,14 @@ class Home extends StatelessWidget{
                   child: Container(
                     padding: const EdgeInsets.all(30.0),
                     color: Colors.indigoAccent,
-                    child: Text('1'),
+                    child: const Text('1'),
               )),
               Expanded(
                 flex: 2,
                   child: Container(
                     padding: const EdgeInsets.all(30.0),
                     color: Colors.green,
-                    child: Text('2'),
+                    child: const Text('2'),
                   )),
               Expanded(
                   flex: 3,
@@ -142,14 +142,14 @@ class Home extends StatelessWidget{
                   child: Container(
                     padding: const EdgeInsets.all(30.0),
                     color: Colors.indigoAccent,
-                    child: Text('1'),
+                    child: const Text('1'),
                   )),
               Expanded(
                   flex: 2,
                   child: Container(
                     padding: const EdgeInsets.all(30.0),
                     color: Colors.green,
-                    child: Text('2'),
+                    child: const Text('2'),
                   )),
               Expanded(
                   flex: 3,
@@ -176,14 +176,14 @@ class Home extends StatelessWidget{
                   child: Container(
                     padding: const EdgeInsets.all(30.0),
                     color: Colors.indigoAccent,
-                    child: Text('1'),
+                    child: const Text('1'),
                   )),
               Expanded(
                   flex: 2,
                   child: Container(
                     padding: const EdgeInsets.all(30.0),
                     color: Colors.green,
-                    child: Text('2'),
+                    child: const Text('2'),
                   )),
               Expanded(
                   flex: 3,
@@ -210,14 +210,14 @@ class Home extends StatelessWidget{
                   child: Container(
                     padding: const EdgeInsets.all(30.0),
                     color: Colors.indigoAccent,
-                    child: Text('1'),
+                    child: const Text('1'),
                   )),
               Expanded(
                   flex: 2,
                   child: Container(
                     padding: const EdgeInsets.all(30.0),
                     color: Colors.green,
-                    child: Text('2'),
+                    child: const Text('2'),
                   )),
               Expanded(
                   flex: 3,
@@ -244,14 +244,14 @@ class Home extends StatelessWidget{
                   child: Container(
                     padding: const EdgeInsets.all(30.0),
                     color: Colors.indigoAccent,
-                    child: Text('1'),
+                    child: const Text('1'),
                   )),
               Expanded(
                   flex: 2,
                   child: Container(
                     padding: const EdgeInsets.all(30.0),
                     color: Colors.green,
-                    child: Text('2'),
+                    child: const Text('2'),
                   )),
               Expanded(
                   flex: 3,
